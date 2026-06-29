@@ -11,7 +11,7 @@ export default function Avatar({ user, size = 40, style = {} }) {
   if (user?.avatar) {
     return (
       <img
-        src={`http://localhost:5000${user.avatar}`}
+        src={`https://nexus-social-platform-production.up.railway.app${user.avatar}`}
         alt={user.full_name}
         className="avatar"
         style={{ width: size, height: size, ...style }}

@@ -92,14 +92,14 @@ export default function PostCard({ post, onDelete }) {
       {post.media_url && (
         post.media_type === 'video' ? (
           <video
-            src={`http://localhost:5000${post.media_url}`}
+            src={`https://nexus-social-platform-production.up.railway.app${post.media_url}`}
             className="post-media"
             controls
             style={{ display: 'block' }}
           />
         ) : (
           <img
-            src={`http://localhost:5000${post.media_url}`}
+            src={`https://nexus-social-platform-production.up.railway.app${post.media_url}`}
             alt="Post media"
             className="post-media"
             style={{ display: 'block' }}

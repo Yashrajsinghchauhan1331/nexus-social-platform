@@ -13,7 +13,7 @@ export function SocketProvider({ children }) {
   useEffect(() => {
     if (!token || !user) return;
 
-    const socket = io('http://localhost:5000', {
+    const socket = io('https://nexus-social-platform-production.up.railway.app', {
       auth: { token }
     });
 
