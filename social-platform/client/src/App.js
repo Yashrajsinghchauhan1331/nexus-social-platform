@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from 'axios';
+axios.defaults.baseURL = 'https://nexus-social-platform-production.up.railway.app';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider, useAuth } from './context/AuthContext';
